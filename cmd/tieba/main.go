@@ -1,4 +1,4 @@
-// Command tieba is a single-binary command line for tieba-cli.
+// Command tieba is a single-binary command line for Baidu Tieba (百度贴吧).
 package main
 
 import (
@@ -8,7 +8,7 @@ import (
 	"syscall"
 
 	"github.com/charmbracelet/fang"
-	"github.com/tamnd/tieba-cli-cli/cli"
+	"github.com/tamnd/tieba-cli/cli"
 )
 
 func main() {
@@ -16,8 +16,6 @@ func main() {
 	defer stop()
 
 	root := cli.Root()
-	// fang gives styled help, errors, and shell completion for free; the command
-	// tree and its exit-code mapping stay in the cli package.
 	if err := fang.Execute(ctx, root,
 		fang.WithVersion(cli.Version),
 		fang.WithNotifySignal(os.Interrupt, syscall.SIGTERM),
