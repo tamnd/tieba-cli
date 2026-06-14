@@ -1,0 +1,10 @@
+title       = "tieba"
+baseURL     = "https://tieba-cli-cli.tamnd.com/"
+description = "Browse Baidu Tieba hot topics (百度贴吧热议)"
+contentDir  = "content"
+outputDir   = "public"
+theme       = "tago-doks"
+syntaxHighlight = "true"
+
+[params]
+github = "https://github.com/tamnd/tieba-cli-cli"
