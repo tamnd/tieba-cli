@@ -20,6 +20,9 @@ import (
 // DefaultUserAgent is the mobile User-Agent that the Tieba endpoint expects.
 const DefaultUserAgent = "Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0)"
 
+// Host is the canonical site hostname.
+const Host = "tieba.baidu.com"
+
 // Config holds constructor parameters for the Client.
 type Config struct {
 	BaseURL   string

@@ -2,10 +2,10 @@ package tieba
 
 // Topic is the record emitted for the hot command.
 type Topic struct {
-	Rank        int    `json:"rank"`
-	Name        string `json:"name"`
-	Discussions int    `json:"discussions"`
-	URL         string `json:"url"`
+	Rank        int    `json:"rank"                  table:"rank"`
+	Name        string `json:"name"     kit:"id"     table:"name"`
+	Discussions int    `json:"discussions,omitempty" table:"discussions"`
+	URL         string `json:"url"                   table:"url,url"`
 }
 
 // ─── API wire types ──────────────────────────────────────────────────────────
